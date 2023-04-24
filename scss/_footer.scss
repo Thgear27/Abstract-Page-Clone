@@ -29,7 +29,7 @@
         width: 90%;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
 
         position: relative;
     }
@@ -52,6 +52,31 @@
         p {
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 1rem 0 1rem 0 !important;
+
+        .footer-inner {
+            padding: 0;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__column-copyright {
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+    }
+
+    .help-button {
+        &__text {
+            display: none !important;
+        }
+        padding: 12px !important;
     }
 }
 

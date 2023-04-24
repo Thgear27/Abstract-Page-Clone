@@ -16,6 +16,7 @@
         margin: 0;
         font-size: 1.5rem;
     }
+
     &__item a {
         color: variables.$color1;
         font-size: 1.25rem;
@@ -25,6 +26,26 @@
         margin-top: 50px;
         display: flex;
         gap: 30px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .list {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        &__item img {
+            max-height: 65px;
+        }
+        
+        &__item p {
+            font-size: 1.35rem;
+        }
+
+        &__item h3 {
+            font-size: 1.4rem;
+        }
     }
 }
 
