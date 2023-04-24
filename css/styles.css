@@ -6,11 +6,6 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {
-  html {
-    font-size: 10px !important;
-  }
-}
 body {
   font-family: "GT America Trial", sans-serif;
   margin: 0;
@@ -75,6 +70,29 @@ body {
   padding: 0.375em 1.375em;
   padding-top: 0.45em;
   vertical-align: middle;
+}
+.topbar-inner__search, .topbar-inner__menu {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .topbar-inner__signin, .topbar-inner__submit {
+    display: none;
+  }
+  .topbar-inner__search, .topbar-inner__menu {
+    display: flex !important;
+  }
+  .topbar-inner__search {
+    margin-left: auto;
+  }
+  .topbar-inner__menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .topbar-inner__button-lines {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 23px;
+  }
 }
 
 .help {

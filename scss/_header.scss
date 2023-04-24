@@ -49,7 +49,7 @@
     &__helpcenter:hover {
         text-decoration: underline;
     }
-    
+
     &__submit {
         margin-left: auto;
         border: 1px solid white;
@@ -66,10 +66,45 @@
         color: variables.$color3;
     }
 
-    &__signin, &__submit {
+    &__signin,
+    &__submit {
         border-radius: 8px;
         padding: 0.375em 1.375em;
         padding-top: 0.45em;
         vertical-align: middle;
     }
+
+    &__search,
+    &__menu {
+        display: none;
+    }
+
+    @media (max-width: 1200px) {
+
+        &__signin,
+        &__submit {
+            display: none;
+        }
+
+        &__search,
+        &__menu {
+            display: flex !important;
+        }
+
+        &__search {
+            margin-left: auto;
+        }
+
+        &__menu {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__button-lines {
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 23px;
+        }
+    }
+
 }
