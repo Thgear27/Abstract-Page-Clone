@@ -1,0 +1,75 @@
+@use 'variables';
+
+.topbar {
+    background-color: black;
+    padding: 0 30px;
+    height: 5.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.topbar-inner {
+    color: white;
+    font-size: 1.5rem;
+
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__logo {
+        height: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    &__logo:hover {
+        opacity: 0.7;
+    }
+
+    &__helpcenter {
+        padding-left: 1rem;
+
+        text-align: center;
+        position: relative;
+        top: 0.1em;
+
+        border-left: 2px solid white;
+
+        transition: all 0.3s ease;
+    }
+
+    &__helpcenter:hover {
+        text-decoration: underline;
+    }
+    
+    &__submit {
+        margin-left: auto;
+        border: 1px solid white;
+        background-color: #191a1b;
+    }
+
+    &__signin {
+        background-color: variables.$color1;
+        transition: all 0.3s ease;
+    }
+
+    &__signin:hover {
+        background-color: variables.$color4;
+        color: variables.$color3;
+    }
+
+    &__signin, &__submit {
+        border-radius: 8px;
+        padding: 0.375em 1.375em;
+        padding-top: 0.45em;
+        vertical-align: middle;
+    }
+}

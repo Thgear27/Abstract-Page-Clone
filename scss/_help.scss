@@ -1,0 +1,58 @@
+@use 'variables';
+
+.help {
+    padding: 80px 0 115px 0;
+
+    background-color: variables.$color2;
+
+    &__title {
+        display: inline-block;
+        font-weight: normal;
+        font-size: 5rem;
+        letter-spacing: -4px;
+        margin: 1rem;
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__input {
+        display: inline-block;
+
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+        box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        border-radius: 4px;
+        line-height: 2.1rem;
+        transition: all 0.3s ease;
+    }
+
+    &__arrowsvg {
+        width: 1.75em;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        transition: all 0.3s ease;
+    }
+
+    &__arrowsvg:hover,
+    &__input:hover {
+        fill: variables.$color1;
+        border-color: variables.$color1 ;
+    }
+
+}
+
+.help-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    max-width: 720px;
+    margin: 0 auto;
+}
